@@ -1,0 +1,146 @@
+{
+  "extractors": [
+    {
+      "title": "controller",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "controller",
+      "extractor_config": {
+        "regex_value": "controller=(.+?)(\\s|$)"
+      },
+      "condition_type": "none",
+      "condition_value": ""
+    },
+    {
+      "title": "path",
+      "extractor_type": "regex",
+      "converters": [
+        {
+          "type": "lowercase",
+          "config": {}
+        }
+      ],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "path",
+      "extractor_config": {
+        "regex_value": "path=(.+?)(\\s|$)"
+      },
+      "condition_type": "none",
+      "condition_value": ""
+    },
+    {
+      "title": "action",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "action",
+      "extractor_config": {
+        "regex_value": "action=(.+?)(\\s|$)"
+      },
+      "condition_type": "none",
+      "condition_value": ""
+    },
+    {
+      "title": "status",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "status",
+      "extractor_config": {
+        "regex_value": "status=(.+?)(\\s|$)"
+      },
+      "condition_type": "none",
+      "condition_value": ""
+    },
+    {
+      "title": "duration",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "duration",
+      "extractor_config": {
+        "regex_value": "duration=(.+?)(\\s|$)"
+      },
+      "condition_type": "none",
+      "condition_value": ""
+    },
+    {
+      "title": "view_duration",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "view_duration",
+      "extractor_config": {
+        "regex_value": "view=(.+?)(\\s|$)"
+      },
+      "condition_type": "none",
+      "condition_value": ""
+    },
+    {
+      "title": "db_duration",
+      "extractor_type": "regex",
+      "converters": [
+        {
+          "type": "lowercase",
+          "config": {}
+        }
+      ],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "db_duration",
+      "extractor_config": {
+        "regex_value": "db=(.+?)(\\s|$)"
+      },
+      "condition_type": "none",
+      "condition_value": ""
+    },
+    {
+      "title": "format",
+      "extractor_type": "regex",
+      "converters": [],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "format",
+      "extractor_config": {
+        "regex_value": "format=(.+?)(\\s|$)"
+      },
+      "condition_type": "none",
+      "condition_value": ""
+    },
+    {
+      "title": "method",
+      "extractor_type": "regex",
+      "converters": [
+        {
+          "type": "lowercase",
+          "config": {}
+        }
+      ],
+      "order": 0,
+      "cursor_strategy": "copy",
+      "source_field": "message",
+      "target_field": "method",
+      "extractor_config": {
+        "regex_value": "method=(.+?)(\\s|$)"
+      },
+      "condition_type": "none",
+      "condition_value": ""
+    }
+  ],
+  "version": "3.0.2"
+}
